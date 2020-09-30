@@ -11,3 +11,19 @@
   background-color: #22668a;
   color: white;
 }
+
+
+.overflow-auto::-webkit-scrollbar{
+  display: none;
+}
+
+@media only screen and (max-height: 1000px){
+  .hasil{
+    height: 400px;
+  }
+
+  .menu{
+    height: 600px;
+  }
+  
+}

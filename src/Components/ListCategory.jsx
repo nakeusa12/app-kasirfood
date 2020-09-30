@@ -45,7 +45,7 @@ export default class ListCategory extends Component {
         const { changeCategory, categoriYangDipilih } = this.props;
         return (
             <Col md={2} mt="2">
-                <h4> <strong>Daftar Kategori</strong> </h4>
+                <h4 className="mt-4"> <strong>Daftar Kategori</strong> </h4>
                 <hr />
                 <ListGroup>
                     {categories && categories.map(category => (

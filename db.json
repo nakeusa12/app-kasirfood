@@ -185,8 +185,8 @@
   ],
   "keranjangs": [
     {
-      "jumlah": 1,
-      "totalHarga": 12000,
+      "jumlah": 2,
+      "totalHarga": 24000,
       "product": {
         "id": 3,
         "kode": "K-03",
@@ -200,6 +200,125 @@
         }
       },
       "id": 3
+    },
+    {
+      "jumlah": 2,
+      "totalHarga": 20000,
+      "product": {
+        "id": 6,
+        "kode": "K-06",
+        "nama": "Bakso",
+        "harga": 10000,
+        "is_ready": true,
+        "gambar": "bakso.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 4
+    },
+    {
+      "jumlah": 1,
+      "totalHarga": 13000,
+      "product": {
+        "id": 5,
+        "kode": "K-05",
+        "nama": "Mie Goreng",
+        "harga": 13000,
+        "is_ready": true,
+        "gambar": "mie-goreng.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 5
+    },
+    {
+      "jumlah": 3,
+      "totalHarga": 54000,
+      "product": {
+        "id": 4,
+        "kode": "K-04",
+        "nama": "Lontong Opor Ayam",
+        "harga": 18000,
+        "is_ready": true,
+        "gambar": "lontong-opor-ayam.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 6
+    },
+    {
+      "jumlah": 2,
+      "totalHarga": 32000,
+      "product": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
+        "is_ready": true,
+        "gambar": "sate-ayam.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 7
+    },
+    {
+      "jumlah": 1,
+      "totalHarga": 14000,
+      "product": {
+        "id": 7,
+        "kode": "K-07",
+        "nama": "Mie Ayam Bakso",
+        "harga": 14000,
+        "is_ready": true,
+        "gambar": "mie-ayam-bakso.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 8
+    },
+    {
+      "jumlah": 1,
+      "totalHarga": 5000,
+      "product": {
+        "id": 9,
+        "kode": "K-09",
+        "nama": "Kentang Goreng",
+        "harga": 5000,
+        "is_ready": true,
+        "gambar": "kentang-goreng.jpg",
+        "category": {
+          "id": 3,
+          "nama": "Cemilan"
+        }
+      },
+      "id": 9
+    },
+    {
+      "jumlah": 1,
+      "totalHarga": 15000,
+      "product": {
+        "id": 10,
+        "kode": "K-010",
+        "nama": "Cheese Burger",
+        "harga": 15000,
+        "is_ready": true,
+        "gambar": "cheese-burger.jpg",
+        "category": {
+          "id": 3,
+          "nama": "Cemilan"
+        }
+      },
+      "id": 10
     }
   ],
   "pesanans": [
