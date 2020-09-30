@@ -219,8 +219,8 @@
       "id": 2
     },
     {
-      "jumlah": 3,
-      "totalHarga": 30000,
+      "jumlah": 4,
+      "totalHarga": 40000,
       "product": {
         "id": 6,
         "kode": "K-06",
