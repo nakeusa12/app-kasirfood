@@ -85,7 +85,7 @@ export default class Home extends Component {
                                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
                                 icon: "success",
                                 button: false,
-                                timer: 800
+                                timer: 1000
                             });
                         })
                         .catch(err => {
@@ -105,7 +105,7 @@ export default class Home extends Component {
                                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
                                 icon: "success",
                                 button: false,
-                                timer: 800
+                                timer: 1000
                             });
                         })
                         .catch(err => {
