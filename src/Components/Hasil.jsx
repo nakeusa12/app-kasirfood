@@ -69,6 +69,7 @@ export default class Hasil extends Component {
 
         axios.put(api_url + "keranjangs/" + this.state.keranjangDetail.id, data)
             .then(res => {
+                this.props.getListKeranjang();
                 swal({
                     title: "Update Pesanan",
                     text: "Update Pesanan " + data.product.nama,
@@ -87,6 +88,7 @@ export default class Hasil extends Component {
 
         axios.delete(api_url + "keranjangs/" + id)
             .then(res => {
+                this.props.getListKeranjang();
                 swal({
                     title: "Hapus Pesanan Sukses",
                     text: "Hapus Pesanan Sukses " + this.state.keranjangDetail.product.nama,

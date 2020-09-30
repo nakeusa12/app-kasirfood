@@ -27,6 +27,24 @@ export default class Home extends Component {
                 console.log(err);
             })
 
+        this.getListKeranjang();
+    }
+
+
+    // componentDidUpdate(prevState) {
+    //     if (this.state.keranjangs !== prevState.keranjangs) {
+    //         axios.get(api_url + "keranjangs")
+    //             .then(res => {
+    //                 const keranjangs = res.data;
+    //                 this.setState({ keranjangs })
+    //             })
+    //             .catch(err => {
+    //                 console.log(err);
+    //             })
+    //     }
+    // }
+
+    getListKeranjang = () => {
         axios.get(api_url + "keranjangs")
             .then(res => {
                 const keranjangs = res.data;
@@ -35,20 +53,6 @@ export default class Home extends Component {
             .catch(err => {
                 console.log(err);
             })
-    }
-
-
-    componentDidUpdate(prevState) {
-        if (this.state.keranjangs !== prevState.keranjangs) {
-            axios.get(api_url + "keranjangs")
-                .then(res => {
-                    const keranjangs = res.data;
-                    this.setState({ keranjangs })
-                })
-                .catch(err => {
-                    console.log(err);
-                })
-        }
     }
 
     changeCategory = (value) => {
@@ -80,6 +84,7 @@ export default class Home extends Component {
 
                     axios.post(api_url + "keranjangs", keranjang)
                         .then(res => {
+                            this.getListKeranjang();
                             swal({
                                 title: "Sukses Masuk Keranjang",
                                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
@@ -143,7 +148,7 @@ export default class Home extends Component {
                                     ))}
                                 </Row>
                             </Col>
-                            <Hasil keranjangs={keranjangs} {...this.props} />
+                            <Hasil keranjangs={keranjangs} {...this.props} getListKeranjang={this.getListKeranjang} />
                         </Row>
                     </Container>
                 </div>
